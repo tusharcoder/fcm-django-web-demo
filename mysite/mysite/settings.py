@@ -1,3 +1,12 @@
+# @Author: Tushar Agarwal(tusharcoder) <tushar>
+# @Date:   2017-07-05T11:19:57+05:30
+# @Email:  tamyworld@gmail.com
+# @Filename: settings.py
+# @Last modified by:   tushar
+# @Last modified time: 2017-07-05T12:33:36+05:30
+
+
+
 """
 Django settings for mysite project.
 
@@ -41,6 +50,7 @@ INSTALLED_APPS = [
     'fcm_django',
     'corsheaders',
     'sslserver',
+    'tusharnotification.apps.TusharnotificationConfig'
 ]
 
 MIDDLEWARE = [
@@ -151,4 +161,3 @@ if os.path.exists(f):
     module.__file__ = f
     sys.modules[module_name] = module
     exec(open(f, 'rb').read())
-
